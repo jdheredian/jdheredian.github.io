@@ -22,15 +22,15 @@ On this website, you'll find my most recent projects, personal essays, opinions 
 
 ### Data Analyst - Groceries Operation Analyst
 
-[*Rappi](https://about.rappi.com/es/inicio), Bogotá, Colombia. Ago 2022 - Present.*
+[Rappi](https://about.rappi.com/es/inicio), Bogotá, Colombia. Ago 2022 - Present.*
 
 ### RPA Software Developer - Software Specialist
 
-[*IBM](https://www.ibm.com/consulting), Bogotá, Colombia. Feb 2021 - Ago 2022.*
+[IBM](https://www.ibm.com/consulting), Bogotá, Colombia. Feb 2021 - Ago 2022.*
 
 ### Automation and Data Science Internship - IBM Student
 
-[*IBM](https://www.ibm.com/consulting), Bogotá, Colombia. Ago 2021 - Feb 2022.*
+[IBM](https://www.ibm.com/consulting), Bogotá, Colombia. Ago 2021 - Feb 2022.*
 
 ## Skills
 
