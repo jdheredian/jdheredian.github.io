@@ -106,15 +106,3 @@ Adaptability, resilience, and my willingness to continually learn have allowed m
 [*Universidad de los Andes](https://economia.uniandes.edu.co/), Bogotá, CO*
 
 ---
-
-# My projects
-
-[Base de datos sin título](Juan%20Diego%20Heredia%20Nin%CC%83o%20101016598dd94c7fae6199c93f08a2a7/Base%20de%20datos%20sin%20ti%CC%81tulo%20a87e5646fb4b4e3caacfc7433eca899f.csv)
-
----
-
-# My blog and essays
-
-[](Juan%20Diego%20Heredia%20Nin%CC%83o%20101016598dd94c7fae6199c93f08a2a7/Sin%20t%C3%ADtulo%20a621cf04a9494efbaafde87dcb6215a5.csv)
-
----
