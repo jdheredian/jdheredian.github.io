@@ -8,29 +8,10 @@
 
 ### [Found me on LinkedIn!](https://www.linkedin.com/in/juan-diego-heredia-nino)
 
-<aside>
-<img src="https://www.notion.so/icons/emoji-grinning-smiling-eyes_yellow.svg" alt="https://www.notion.so/icons/emoji-grinning-smiling-eyes_yellow.svg" width="40px" /> Hello There, I am Juan Diego and I want to share with you my passion for Economics, Data, and Tech!
-
-</aside>
-
-<aside>
-<img src="https://www.notion.so/icons/user_yellow.svg" alt="https://www.notion.so/icons/user_yellow.svg" width="40px" /> I've recently got my Undergraduate degree in economics and I will start my M.A. in economics very soon. Also, I’ve been working on relevant tech companies such as IBM and Rappi since Fall 2021.
-
-</aside>
-
-<aside>
-<img src="https://www.notion.so/icons/window_yellow.svg" alt="https://www.notion.so/icons/window_yellow.svg" width="40px" /> On this website, you'll find my most recent projects, personal essays, opinions and my professional and academical information.
-
-</aside>
-
-<aside>
-<img src="https://www.notion.so/icons/meeting_yellow.svg" alt="https://www.notion.so/icons/meeting_yellow.svg" width="40px" /> Feel free to explore my profile, and if you have any questions or need guidance in any topic of economics, data science or programming please don't hesitate to reach out through any of my contact sources above.
-
-</aside>
-
-<aside>
-<img src="https://www.notion.so/icons/emoji-smiling-eyes_yellow.svg" alt="https://www.notion.so/icons/emoji-smiling-eyes_yellow.svg" width="40px" /> Thank you for visiting, and I hope you find this platform informative and valuable.
-
+<aside> 
+Hello There, I am Juan Diego and I want to share with you my passion for Economics, Data, and Tech!
+degree in economics and I will start my M.A. in economics very soon. Also, I’ve been working on relevant tech companies such as IBM and Rappi since Fall 2021.
+On this website, you'll find my most recent projects, personal essays, opinions and my professional and academical information. Feel free to explore my profile, and if you have any questions or need guidance in any topic of economics, data science or programming please don't hesitate to reach out through any of my contact sources above. Thank you for visiting, and I hope you find this platform informative and valuable.
 </aside>
 
 ---
