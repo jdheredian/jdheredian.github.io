@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     font-family: 'Roboto', sans-serif;
     color: #000;
@@ -8,201 +9,140 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h3, h5, h6 {
+/* Modo oscuro */
+body.dark-mode {
+    background-color: #121212; /* Fondo oscuro */
+    color: #e0e0e0; /* Texto gris claro */
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
+}
+
+h1, h3, h5, h6 {
     color: #000;
 }
 
-h2, h4 {
-    font-weight: 700;
+/* Títulos en modo oscuro */
+body.dark-mode h1, body.dark-mode h3, 
+body.dark-mode h5, body.dark-mode h6 {
+    color: #a1a3a6; /* Títulos gris claro en modo oscuro */
+}
+
+h2, h4, h5 {
     color: #343a40; /* Morado oscuro */
 }
 
-.a1 {
+/* Títulos morados en modo oscuro */
+body.dark-mode h2, body.dark-mode h4, body.dark-mode h5 {
+    color: #a1a3a6; /* Títulos morado claro en modo oscuro */
+}
+
+/* Enlaces */
+a, .a1 {
     color: #343a40;
-}
-
-a {
-    color: #343a40; /* Morado oscuro */
-    -webkit-transition: color 0.3s ease-in-out; /* Safari & Chrome */
-    -moz-transition: color 0.3s ease-in-out; /* Firefox */
-    -o-transition: color 0.3s ease-in-out; /* Opera */
-    transition: color 0.3s ease-in-out; /* Standard */
-}
-
-.navbar {
-    background-color: #343a40; /* Morado oscuro */
-    border-color: #343a40;
-}
-
-.col-md-3 {
-    background: #fff;
-}
-
-.col-md-9 {
-    background: #fff;
-    padding: 60px;
-    padding-left: 20px;
-}
-
-.navbar-color {
-    background-color: #343a40; /* Morado oscuro */
-    border-color: #4b206b; /* Color más oscuro */
-    color: #fff;
-    -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-    -moz-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-    -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-.nav > li > a:hover,
-.nav > li > a:focus {
-    text-decoration: none;
-    background-color: #4b206b; /* Color más oscuro */
-    -webkit-transition: background-color 0.3s ease-in-out;
-    -moz-transition: background-color 0.3s ease-in-out;
-    -o-transition: background-color 0.3s ease-in-out;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.navbar-inverse .navbar-brand {
-    color: #FFF;
-    -webkit-transition: color 0.3s ease-in-out;
-    -moz-transition: color 0.3s ease-in-out;
-    -o-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out;
 }
 
-.navbar-inverse .navbar-text {
-    color: #FFF;
+/* Enlaces al pasar el cursor */
+a:hover {
+    color: #007bff;
 }
 
-.navbar-inverse .navbar-nav > li > a {
-    color: #FFF;
-    -webkit-transition: color 0.3s ease-in-out;
-    -moz-transition: color 0.3s ease-in-out;
-    -o-transition: color 0.3s ease-in-out;
+/* Enlaces en modo oscuro */
+body.dark-mode a, body.dark-mode .a1 {
+    color: #e0e0e0;
     transition: color 0.3s ease-in-out;
 }
 
-.panel-default > .panel-heading {
-    background-color: #343a40; /* Morado oscuro */
-    color: #FFF;
+/* Enlaces al pasar el cursor en modo oscuro */
+body.dark-mode a:hover {
+    color: #bb86fc; /* Color de hover en modo oscuro */
 }
 
-.navbar-inverse .navbar-brand:hover {
-    color: #343a40;
+/* Barra lateral */
+.sidebar {
+    width: 20%;
+    height: 100%; /* Ocupar toda la altura del viewport */
+    padding: 20px;
+    position: fixed;
+    left: 0; /* Fija la barra lateral en el lado izquierdo */
+    margin-left: 10%;
+    
 }
 
-.navbar .navbar-nav > li > a:hover {
-    color: #343a40;
+.content {
+    margin-left: 25%; /* Desplaza el contenido a la derecha de la barra lateral */
+    padding: 20px;
+    position: relative; /* Permite que el contenido se desplace al hacer scroll */
 }
 
-.collapse, .navbar-collapse {
-    color: #343a40;
+
+/* Ocultar las secciones por defecto */
+.section-content {
+    display: none;
 }
 
-.img-portfolio {
-    margin-bottom: 30px;
-}
-
-.img-hover:hover {
-    opacity: 0.8;
-    -webkit-transition: opacity 0.3s ease-in-out;
-    -moz-transition: opacity 0.3s ease-in-out;
-    -o-transition: opacity 0.3s ease-in-out;
-    transition: opacity 0.3s ease-in-out;
-}
-
-footer {
-    margin: 50px 0;
-}
-
-@media(max-width:991px) {
-    .customer-img,
-    .img-related {
-        margin-bottom: 30px;
-    }
-}
-
-@media(max-width:767px) {
-    .img-portfolio {
-        margin-bottom: 15px;
-    }
-
-    header.carousel .carousel {
-        height: 70%;
-    }
-}
-
-img.displayed {
+.section-content.active {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-img.resize {
-    width: 80%;
-    height: 80%;
-    border-radius: 50%;
+/* Párrafos y listas */
+p, ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #343a40;
 }
 
-.tags {
-    list-style: none;
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
+/* Párrafos y listas en modo oscuro */
+body.dark-mode p, body.dark-mode ul, body.dark-mode li {
+    color: #e0e0e0; /* Texto gris claro en modo oscuro */
 }
 
-.tags li {
-    float: left;
-}
-
-.tag {
-    background: #eee;
-    border-radius: 3px 0 0 3px;
-    color: #999;
-    display: inline-block;
-    height: 26px;
-    line-height: 26px;
-    padding: 0 20px 0 23px;
-    position: relative;
-    margin: 0 10px 10px 0;
+/* Enlaces de la barra lateral */
+.sidebar ul li a {
+    color: #343a40;
     text-decoration: none;
-    -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-    -moz-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-    -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-.tag::before {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
-    content: '';
-    height: 6px;
-    left: 10px;
-    position: absolute;
-    width: 6px;
-    top: 10px;
+.sidebar ul li a:hover {
+    text-decoration: underline;
 }
 
-.tag::after {
-    background: #fff;
-    border-bottom: 13px solid transparent;
-    border-left: 10px solid #eee;
-    border-top: 13px solid transparent;
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 0;
+/* Enlaces de la barra lateral en modo oscuro */
+body.dark-mode .sidebar ul li a {
+    color: #e0e0e0; /* Texto claro para los enlaces de la barra lateral en modo oscuro */
 }
 
-.tag:hover {
-    background-color: #343a40;
-    color: white;
+body.dark-mode .sidebar ul li a:hover {
+    text-decoration: underline;
+    color: #bb86fc; /* Color de hover en modo oscuro para enlaces de la barra lateral */
 }
 
-.tag:hover::after {
-    border-left-color: #343a40;
+/* Estilos para el botón redondo */
+#toggle-dark-mode {
+    border: none; /* Sin contorno */
+    background-color: transparent; /* Fondo transparente */
+    padding: 11px; /* Espaciado interno */
+    border-radius: 50%; /* Hace que el botón sea redondo */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #toggle-dark-mode i {
+    font-size: 1rem; /* Tamaño del icono */
+    color: #a1a3a6; /* Color del icono en la barra */
+  }
+  
+  #toggle-dark-mode:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo ligero al hacer hover */
+  }
+
+  #toggle-dark-mode {
+    z-index: 10; /* Asegura que el botón esté por encima de otros elementos */
 }
+
+
+

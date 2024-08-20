@@ -1,40 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Juan Diego Heredia Niño</title>
+    <title>Juan Diego - Proyectos</title>
     <link rel="icon" href="assets/favicon.png" type="image/png">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-          font-family: 'Roboto', sans-serif;
-        }
-        .container {
-          text-align: center;
-        }
-        p {
-          text-align: center;
-        }
-        img {
-          margin-top: 50px; /* Añadir margen superior a la imagen */
-        }
-        .large-text {
-          font-size: 1.3rem; /* Puedes ajustar este tamaño */
-          font-weight: 400;
-          align-items: center;
-          text-align: center;
-        }
-    </style>
   </head>
-
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" style="color: #343a40;" href="index.html"></a>
+        <a class="navbar-brand" href="index.html"><b>Juan Diego Heredia Niño</b></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -45,7 +25,6 @@
             <li class="nav-item"><a class="nav-link" href="academic.html">Acádemico</a></li>
             <li class="nav-item"><a class="nav-link" href="projects.html">Proyectos</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contáctame</a></li>
-            <!-- Botón de Dark Mode -->
             <li class="nav-item">
               <button id="toggle-dark-mode" class="btn btn-outline-light ml-3">
                 <i id="mode-icon" class="fas fa-moon"></i>
@@ -57,23 +36,37 @@
     </nav>
 
     <!-- Main Content -->
-    <div class="container">
-        <!-- Imagen y Descripción -->
-        <section id="about">
-            <img src="foto_perfil.jpeg" alt="Foto de perfil" class="img-fluid rounded-circle mb-3" style="width: 300px; height: 300px; object-fit: cover;">
-            <h2>Juan Diego Heredia Niño</h2>
-            <h5>¡Hola!</h5>
-            <p class="large-text">En esta página comparto mi trayectoria, proyectos y reflexiones sobre temas que me interesan.</p> 
-            <p class="large-text">Explórala y no dudes en ponerte en contacto conmigo si algo te resulta interesante.</p>
-  
-        </section>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-12">
+          <!-- Sidebar -->
+          <div class="sidebar">
+            <h5>Proyectos</h5>
+            <a href="#" onclick="showSection('project1')">Observatorio de seguridad</a>
+            <br></br>
+            <h5>Ensayos</h5>
+            <a href="#" onclick="showSection('essay1')"></a>
+          </div>
+
+          <!-- Content -->
+          <div class="content">
+            <!-- Mensaje de bienvenida (visible por defecto) -->
+            <section id="welcome" class="section-content active">
+              <h2>Bienvenido</h2>
+              <p>En esta sección están alojados algunos proyectos que he realizado y textos que escribo de vez en cuando.</p>
+            </section>
+            <!-- Proyecto 1 -->
+            <section id="project1" class="section-content">
+              <h2>Observatorio de seguridad</h2>
+              <p>En está aplicación se realizó un Dashboard para observar las principales variables de seguridad nacional.</p>
+            </section>
+
+          </div>
+        </div>
       </div>
+    </div>
 
     <!-- Footer -->
-
-    <!-- Bootstrap & jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts.js"></script>
   </body>
 </html>

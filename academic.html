@@ -4,24 +4,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Juan Diego - Acádemico</title>
-    <link rel="icon" href="favicon.png" type="image/png">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Juan Diego Heredia Niño</a>
+        <a class="navbar-brand" href="assets/favicon.png"><b>Juan Diego Heredia Niño</b></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="cv.html">Hoja de Vida</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">Sobre mí</a></li>
+            <li class="nav-item"><a class="nav-link" href="cv.html">Curriculum Vitae</a></li>
             <li class="nav-item"><a class="nav-link" href="academic.html">Acádemico</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contáctame</a></li>
+            <li class="nav-item">
+              <button id="toggle-dark-mode" class="btn btn-outline-light ml-3">
+                <i id="mode-icon" class="fas fa-moon"></i>
+              </button>
+            </li>
           </ul>
         </div>
       </div>
@@ -29,54 +35,59 @@
 
     <!-- Main Content -->
     <div class="container mt-5">
-      <div class="row">
-        <div class="col-lg-12">
-          <section id="notion-pages">
-            <h2>Macroeconomía 3</h2>
-            <ul id="notion-links">
-              <li><a href="https://juandheredian.notion.site/Repaso-a2605cbadf244aba8b35a897cd69e5c9?pvs=4"  target="_blank"><b>Repaso</b></a></li>
-              <li><a href="https://juandheredian.notion.site/Modelo-de-Solow-Introducci-n-ca3fa25b20fc4f06993004965c9c8c75?pvs=4" target="_blank"><b>Modelo de Solow - Introducción</b></a></li>
-              <!-- <li><a target="_blank">Complementaría #3</a></li>
-              <li><a href="" target="_blank">Complementaría #4</a></li>
-              <li><a href="" target="_blank">Complementaría #5</a></li>
-              <li><a href="" target="_blank">Complementaría #6</a></li>
-              <li><a href="" target="_blank">Complementaría #7</a></li>
-              <li><a href="" target="_blank">Complementaría #8</a></li>
-              <li><a href="" target="_blank">Complementaría #9</a></li>
-              <li><a href="" target="_blank">Complementaría #10</a></li>
-              <li><a href="" target="_blank">Complementaría #11</a></li>
-              <li><a href="" target="_blank">Complementaría #12</a></li> -->
-              <!-- Puedes agregar más páginas aquí -->
-            </ul>
-          </section>
-          <section id="notion-pages">
-            <h2>Análisis de datos y Big Data</h2>
-            <h5>Módulo #1 - Introducción a la programación</h2>
-            <ul id="notion-links">
-              <li><a href="https://drive.google.com/drive/folders/1X_Cs6foQUfFT0A3Z4A8d5CnUmYLOSxld?usp=sharing" target="_blank"><b>Clase 1 - Pensamiento Algorítmico</b></a></li>
-              <li><a href="https://drive.google.com/drive/folders/13Q2-1Ep_2XXwKv9Bao76QpsI76oePWD4?usp=sharing" target="_blank"><b>Clase 2 - Funciones</b></a></li>
-              <!-- <li><a target="_blank">Complementaría #3</a></li>
-              <li><a href="" target="_blank">Complementaría #4</a></li>
-              <li><a href="" target="_blank">Complementaría #5</a></li>
-              <li><a href="" target="_blank">Complementaría #6</a></li>
-              <li><a href="" target="_blank">Complementaría #7</a></li>
-              <li><a href="" target="_blank">Complementaría #8</a></li>
-              <li><a href="" target="_blank">Complementaría #9</a></li>
-              <li><a href="" target="_blank">Complementaría #10</a></li>
-              <li><a href="" target="_blank">Complementaría #11</a></li>
-              <li><a href="" target="_blank">Complementaría #12</a></li> -->
-              <!-- Puedes agregar más páginas aquí -->
-            </ul>
-          </section>
-        </div>
-      </div>
-    </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                    <h5>Economía</h5>
+                    <a href="#" onclick="showSection('macroeconomia')">Macroeconomía 3</a>
+                    <br></br>
+                    <h5>Educación Continua</h5>
+                    <a href="#" onclick="showSection('analisis-datos')">Análisis de datos y Big Data</a>
+            </div>
 
-    <!-- Footer -->
+            <!-- Content -->
+            <div class="content">
+                <!-- Mensaje de bienvenida (visible por defecto) -->
+                <section id="welcome" class="section-content active">
+                  <h2>Bienvenido</h2>
+                  <p>Bienvenido a esta sección académica. Acá encontrarás todos los recursos de las clases que dicto en la Universidad de los Andes.</p>
+                  <p>Por una parte, encontrarás los accesos directos a los archivos de la clase de Análisis de datos y Big Data que están alojados en la plataforma de la universidad, Bloque Neón.</p>
+                  <p>Por otra parte, encontrás mis apuntes de la clase de Macroeconomía 3, los cuales son un recurso adicional que utilizo en mi clase. Cada sección tiene sus condiciones, por favor revisar antes de acceder.</p>
+                  <p>Selecciona una de las opciones del menú para ver el contenido relacionado.</p>
+                </section>
+
+                <section id="macroeconomia" class="section-content">
+                  <h2>Macroeconomía 3</h2>
+                  <a>En este <b><a href="https://outlook.office.com/bookwithme/user/2512aef04b1047519539ef4503b7176d@uniandes.edu.co/meetingtype/P1gRGa6t70GdqHo0oygBHg2?anonymous&ep=mLinkFromTile" target="_blank">link</a></b> puedes reservar el horario de atención.</a>
+                  <br></br>
+                  <h4>Complementaría 1</h4>
+                  <a>En esta clase repasamos los requerimientos matemáticos de la clase: funciones, límites, derivadas, teorema de Euler, etc.</a>
+                  <ul id="notion-links"><li><a href="https://juandheredian.notion.site/Repaso-a2605cbadf244aba8b35a897cd69e5c9?pvs=4" target="_blank"><b>Repaso</b></a></li></ul>
+                  <h4>Complementaría 2</h4>
+                  <a>En esta clase hacemos la introducción a Solow, modelo de crecimiento exógeno.</a>
+                  <ul id="notion-links"><li><a href="https://juandheredian.notion.site/Modelo-de-Solow-Introducci-n-ca3fa25b20fc4f06993004965c9c8c75?pvs=4" target="_blank"><b>Modelo de Solow - Introducción</b></a></li></ul>
+                  
+                </section>
+
+                <section id="analisis-datos" class="section-content">
+                  <h2>Análisis de datos y Big Data</h2>
+                  <h5>Módulo #1 - Introducción a la programación</h5>
+                  <ul id="notion-links">
+                    <li><a href="https://drive.google.com/drive/folders/1X_Cs6foQUfFT0A3Z4A8d5CnUmYLOSxld?usp=sharing" target="_blank"><b>Clase 1 - Pensamiento Algorítmico</b></a></li>
+                    <li><a href="https://drive.google.com/drive/folders/13Q2-1Ep_2XXwKv9Bao76QpsI76oePWD4?usp=sharing" target="_blank"><b>Clase 2 - Funciones</b></a></li>
+                  </ul>
+                </section>
+            </div>
+         </div>
+        </div>
+    </div>
 
     <!-- Bootstrap & jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Archivo JavaScript -->
     <script src="scripts.js"></script>
   </body>
 </html>
