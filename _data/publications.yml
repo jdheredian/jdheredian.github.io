@@ -1,0 +1,21 @@
+items:
+  - year: 2024-present
+    title: "Machine Learning for Early Warning of Atypical Violence — SAT Colombia"
+    venue: "Tesis de Maestría · Universidad de los Andes"
+    url: "/assets/pdf/main.pdf"
+    type: thesis
+  - year: 2023
+    title: "Crimen y Política Pública: Evaluación de Impacto en Bogotá"
+    venue: "Tesis de Pregrado · Universidad de los Andes"
+    url: "/assets/pdf/CV_Heredia_Niño_08_2025.pdf"
+    type: thesis
+  - year: 2025
+    title: "Nearshoring y Oportunidades de Exportación para Colombia"
+    venue: "Fedesarrollo — Working Paper (en progreso)"
+    url: "#"
+    type: working_paper
+  - year: 2024
+    title: "Análisis de Redes de Crimen y Violencia Urbana"
+    venue: "CEDE – Universidad de los Andes · Notas de Política"
+    url: "#"
+    type: report

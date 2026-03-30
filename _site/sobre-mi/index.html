@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre mí — Juan Diego Heredia Niño</title>
+  <meta name="description" content="Economista en la intersección de política pública, IA y desarrollo territorial.">
+  <meta name="author" content="Juan Diego Heredia Niño">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sobre mí">
+  <meta property="og:description" content="Economista en la intersección de política pública, IA y desarrollo territorial.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://0.0.0.0:4000/sobre-mi/">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <!-- Theme flash prevention: apply saved theme before render -->
+  <script>
+    (function() {
+      var t = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+</head>
+
+<body>
+  <!-- Search overlay: siempre en el body, encima de todo -->
+  <div class="search-overlay" id="searchOverlay" onclick="closeSearch(event)">
+    <div class="search-box">
+      <input type="text" class="search-input" id="searchInput" placeholder="Buscar..." autocomplete="off">
+      <div id="searchResults"></div>
+      <p class="search-hint">ESC para cerrar · ⌘K para abrir</p>
+    </div>
+  </div>
+
+  <nav>
+  <!-- Izquierda: logo + hamburger (mobile) -->
+  <div class="nav-left">
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+    
+    <a href="/" class="nav-logo">
+      <span class="nav-logo-filled">JD</span><span class="nav-logo-outline"> Heredia Niño</span>
+    </a>
+    
+  </div>
+
+  <!-- Centro: links de navegación -->
+  <ul class="nav-links">
+    <li class="nav-item"><a href="/sobre-mi/" data-i18n="nav.about">Sobre mí</a></li>
+    <li class="nav-item"><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
+    <li class="nav-item"><a href="/proyectos/" data-i18n="nav.projects">Proyectos</a></li>
+    <li class="nav-item"><a href="/academia/" data-i18n="nav.academy">Academia</a></li>
+  </ul>
+
+  <!-- Derecha: controles -->
+  <div class="nav-controls">
+    <button class="icon-btn" id="searchBtn" onclick="toggleSearch()" title="Buscar" aria-label="Buscar">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="6.5" cy="6.5" r="4.5" stroke="currentColor" stroke-width="2"/>
+        <line x1="10.2" y1="10.2" x2="14" y2="14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <button class="icon-btn" id="langBtn" onclick="toggleLang()" title="Cambiar idioma" aria-label="Cambiar idioma"></button>
+    <button class="icon-btn" id="themeBtn" onclick="toggleTheme()" title="Cambiar tema" aria-label="Cambiar tema"></button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/sobre-mi/" data-i18n="nav.about">Sobre mí</a>
+  <a href="/blog/" data-i18n="nav.blog">Blog</a>
+  <a href="/proyectos/" data-i18n="nav.projects">Proyectos</a>
+  <a href="/academia/" data-i18n="nav.academy">Academia</a>
+</div>
+
+  
+
+  <main><!-- ─── BIO HERO ────────────────────────────────────────── -->
+<section class="page-section" style="border-bottom: var(--border);">
+  <div style="max-width: 760px;">
+    <div class="section-label reveal">
+      <span class="section-label-num" aria-hidden="true">00</span>
+      <span class="section-label-text" data-i18n="about.title">Sobre mí</span>
+    </div>
+    <h1 class="reveal" style="font-size: clamp(32px, 5vw, 56px); font-weight: 700; line-height: .95; letter-spacing: -.03em; margin-bottom: 28px;">
+      Economista.<br>
+      <span style="-webkit-text-stroke: 3px var(--text); color: transparent;">Investigador.</span><br>
+      <span style="background: var(--yellow); color: #0A0A0A; padding: 4px 12px; box-shadow: var(--sh); display: inline-block; margin-top: 4px; line-height: 1.1;">Curioso.</span>
+    </h1>
+    <p class="hero-bio reveal delay-1" style="max-width: 620px;">
+      Economista de la Universidad de los Andes, con Maestría en Economía (en curso). Trabajo en la intersección de política pública, inteligencia artificial y desarrollo territorial. Actualmente en Fedesarrollo como investigador cuantitativo y en la Facultad de Economía (CEDE) – Uniandes.
+    </p>
+    <p class="hero-bio reveal delay-2" style="max-width: 620px; margin-top: 20px; border-left-color: var(--yellow);">
+      Fuera del trabajo fotografío Bogotá, camino la ciudad y enseño datos a audiencias no técnicas.
+    </p>
+    <div style="margin-top: 28px;" class="reveal delay-3">
+      <a href="/assets/pdf/CV_Heredia_Ni%C3%B1o_08_2025.pdf" target="_blank" style="
+        font-family: 'Space Mono', monospace;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: .08em;
+        color: var(--text);
+        text-decoration: none;
+        padding: 10px 20px;
+        border: var(--border);
+        background: var(--card-bg);
+        display: inline-block;
+        transition: background .1s, color .1s, transform .1s, box-shadow .1s;
+      " onmouseover="this.style.background='var(--text)';this.style.color='var(--bg)';this.style.transform='translate(-2px,-2px)';this.style.boxShadow='var(--sh)'"
+         onmouseout="this.style.background='var(--card-bg)';this.style.color='var(--text)';this.style.transform='none';this.style.boxShadow='none'">↓ Descargar CV</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── EXPERIENCIA ────────────────────────────────────── -->
+<section class="page-section" style="border-bottom: var(--border);">
+  <div class="section-label reveal">
+    <span class="section-label-num" aria-hidden="true">01</span>
+    <span class="section-label-text" data-i18n="about.exp">Experiencia</span>
+  </div>
+  <div class="exp-grid">
+    <div class="exp-card reveal delay-1">
+      <p class="exp-org">Fedesarrollo</p>
+      <p class="exp-role">Investigador Cuantitativo</p>
+      <p class="exp-period">2025 — presente</p>
+      <p class="exp-desc">Investigación empírica sobre nearshoring, comercio exterior y desarrollo productivo. Modelos de gravedad, análisis Product Space y matrices Input-Output.</p>
+    </div>
+    <div class="exp-card reveal delay-2">
+      <p class="exp-org">CEDE – Universidad de los Andes</p>
+      <p class="exp-role">Investigador Cuantitativo</p>
+      <p class="exp-period">2024 — 2025</p>
+      <p class="exp-desc">Análisis de crimen y violencia con Profs. Daniel Mejía y Tomás Rodríguez. Base de datos nacional de crimen para el Consejo Gremial Nacional.</p>
+    </div>
+    <div class="exp-card reveal delay-3">
+      <p class="exp-org">Universidad de los Andes</p>
+      <p class="exp-role">Instructor — Análisis de Datos y Big Data</p>
+      <p class="exp-period">2024</p>
+      <p class="exp-desc">Diseñé y dicté curso de 60 horas sobre Python, visualización, ML y Big Data. Teoría con live coding y talleres en Jupyter.</p>
+    </div>
+    <div class="exp-card reveal delay-1">
+      <p class="exp-org">Rappi</p>
+      <p class="exp-role">Data Analyst — Groceries Operations</p>
+      <p class="exp-period">2022 — 2024</p>
+      <p class="exp-desc">Dashboards de eficiencia logística. Clasificador NLP (Random Forest) para soporte al cliente. Modelo de detección de fraude con distancia Levenshtein (~USD 20k/mes ahorrados).</p>
+    </div>
+    <div class="exp-card reveal delay-2">
+      <p class="exp-org">IBM Global Business Services</p>
+      <p class="exp-role">Software Developer — IBM Consultant</p>
+      <p class="exp-period">2022</p>
+      <p class="exp-desc">Diseño y despliegue de Robotic Process Automations (RPA) integradas con SAP. São Paulo, Brasil.</p>
+    </div>
+    <div class="exp-card reveal delay-3">
+      <p class="exp-org">IBM · Universidad de los Andes</p>
+      <p class="exp-role">Intern · Teaching Assistant</p>
+      <p class="exp-period">2020 — 2022</p>
+      <p class="exp-desc">Scraping de 700k+ registros minoristas. NLP para estandarización de descripciones. Monitor en Macroeconomía II y Economía Laboral.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── EDUCACIÓN ──────────────────────────────────────── -->
+<section class="page-section" style="border-bottom: var(--border);">
+  <div class="section-label reveal">
+    <span class="section-label-num" aria-hidden="true">02</span>
+    <span class="section-label-text" data-i18n="about.edu">Educación</span>
+  </div>
+  <div class="exp-grid">
+    <div class="exp-card reveal delay-1">
+      <p class="exp-org">Universidad de los Andes</p>
+      <p class="exp-role">Maestría en Economía (M.A.)</p>
+      <p class="exp-period">2024 — presente</p>
+      <p class="exp-desc">Énfasis en econometría, machine learning y análisis macroeconómico aplicado. Investigación en nearshoring, innovación y predicción de violencia.</p>
+    </div>
+    <div class="exp-card reveal delay-2">
+      <p class="exp-org">Universidad de los Andes</p>
+      <p class="exp-role">Pregrado en Economía (B.A.)</p>
+      <p class="exp-period">2018 — 2023</p>
+      <p class="exp-desc">Grado con honores académicos (GPA 4.08/5.00). Tesis sobre crimen y evaluación de política pública.</p>
+    </div>
+    <div class="exp-card reveal delay-3">
+      <p class="exp-org">EF International Language Campuses</p>
+      <p class="exp-role">English Language & Cultural Exchange</p>
+      <p class="exp-period">2020 — 2021</p>
+      <p class="exp-desc">Certificado C1.1 en inglés. San Diego, Estados Unidos. Beca EF Cultural Exchange.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SKILLS ─────────────────────────────────────────── -->
+<section class="page-section">
+  <div class="section-label reveal">
+    <span class="section-label-num" aria-hidden="true">03</span>
+    <span class="section-label-text" data-i18n="about.skills">Skills</span>
+  </div>
+  <div class="role-pills reveal delay-1">
+    <span class="pill p-red">Python</span>
+    <span class="pill p-red">R</span>
+    <span class="pill p-red">Machine Learning</span>
+    <span class="pill p-red">NLP</span>
+    <span class="pill p-red">SQL</span>
+    <span class="pill p-yellow">Stata</span>
+    <span class="pill p-yellow">Econometría</span>
+    <span class="pill p-yellow">Modelos de Gravedad</span>
+    <span class="pill p-yellow">Input-Output</span>
+    <span class="pill">Product Space</span>
+    <span class="pill">RPA · IBM</span>
+    <span class="pill">Política Pública</span>
+    <span class="pill">Fotografía</span>
+    <span class="pill">Español nativo</span>
+    <span class="pill">Inglés C1</span>
+  </div>
+</section>
+</main>
+
+  <footer>
+  <div class="footer-bottom">
+    <div class="footer-social-btns">
+      
+      <a href="https://github.com/jdheredian" target="_blank" rel="noopener">GitHub</a>
+      
+      <a href="https://www.linkedin.com/in/juan-diego-heredia-nino" target="_blank" rel="noopener">LinkedIn</a>
+      
+      <a href="https://scholar.google.com/citations?user=qc6CJjYAAAAJ" target="_blank" rel="noopener">Scholar</a>
+      
+      <a href="mailto:juandiegoheredianino@gmail.com" target="_blank" rel="noopener">Email</a>
+      
+    </div>
+    <span class="footer-bottom-copy">© 2026 Juan Diego Heredia Niño · Bogotá, Colombia</span>
+  </div>
+</footer>
+
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

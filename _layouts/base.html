@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'es' }}" data-theme="light">
+{% include head.html %}
+<body>
+  <!-- Search overlay: siempre en el body, encima de todo -->
+  <div class="search-overlay" id="searchOverlay" onclick="closeSearch(event)">
+    <div class="search-box">
+      <input type="text" class="search-input" id="searchInput" placeholder="Buscar..." autocomplete="off">
+      <div id="searchResults"></div>
+      <p class="search-hint">ESC para cerrar · ⌘K para abrir</p>
+    </div>
+  </div>
+
+  {% include nav.html %}
+  {% if page.url == '/' %}{% include ticker.html %}{% endif %}
+
+  <main>{{ content }}</main>
+
+  {% include footer.html %}
+
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academia — Juan Diego Heredia Niño</title>
+  <meta name="description" content="Economista en la intersección de política pública, IA y desarrollo territorial.">
+  <meta name="author" content="Juan Diego Heredia Niño">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Academia">
+  <meta property="og:description" content="Economista en la intersección de política pública, IA y desarrollo territorial.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://0.0.0.0:4000/academia/">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <!-- Theme flash prevention: apply saved theme before render -->
+  <script>
+    (function() {
+      var t = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+</head>
+
+<body>
+  <!-- Search overlay: siempre en el body, encima de todo -->
+  <div class="search-overlay" id="searchOverlay" onclick="closeSearch(event)">
+    <div class="search-box">
+      <input type="text" class="search-input" id="searchInput" placeholder="Buscar..." autocomplete="off">
+      <div id="searchResults"></div>
+      <p class="search-hint">ESC para cerrar · ⌘K para abrir</p>
+    </div>
+  </div>
+
+  <nav>
+  <!-- Izquierda: logo + hamburger (mobile) -->
+  <div class="nav-left">
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+    
+    <a href="/" class="nav-logo">
+      <span class="nav-logo-filled">JD</span><span class="nav-logo-outline"> Heredia Niño</span>
+    </a>
+    
+  </div>
+
+  <!-- Centro: links de navegación -->
+  <ul class="nav-links">
+    <li class="nav-item"><a href="/sobre-mi/" data-i18n="nav.about">Sobre mí</a></li>
+    <li class="nav-item"><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
+    <li class="nav-item"><a href="/proyectos/" data-i18n="nav.projects">Proyectos</a></li>
+    <li class="nav-item"><a href="/academia/" data-i18n="nav.academy">Academia</a></li>
+  </ul>
+
+  <!-- Derecha: controles -->
+  <div class="nav-controls">
+    <button class="icon-btn" id="searchBtn" onclick="toggleSearch()" title="Buscar" aria-label="Buscar">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="6.5" cy="6.5" r="4.5" stroke="currentColor" stroke-width="2"/>
+        <line x1="10.2" y1="10.2" x2="14" y2="14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <button class="icon-btn" id="langBtn" onclick="toggleLang()" title="Cambiar idioma" aria-label="Cambiar idioma"></button>
+    <button class="icon-btn" id="themeBtn" onclick="toggleTheme()" title="Cambiar tema" aria-label="Cambiar tema"></button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/sobre-mi/" data-i18n="nav.about">Sobre mí</a>
+  <a href="/blog/" data-i18n="nav.blog">Blog</a>
+  <a href="/proyectos/" data-i18n="nav.projects">Proyectos</a>
+  <a href="/academia/" data-i18n="nav.academy">Academia</a>
+</div>
+
+  
+
+  <main><!-- ─── PUBLICACIONES ──────────────────────────────────── -->
+<section class="page-section" style="border-bottom: var(--border);">
+  <div class="section-label reveal">
+    <span class="section-label-num" aria-hidden="true">01</span>
+    <span class="section-label-text" data-i18n="academia.pub">Publicaciones</span>
+  </div>
+
+  <div class="pub-list">
+    
+    <a href="/assets/pdf/main.pdf" class="pub-item reveal" target="_blank" rel="noopener">
+      <span class="pub-year">2024-present</span>
+      <div>
+        <p class="pub-title">Machine Learning for Early Warning of Atypical Violence — SAT Colombia</p>
+        <p class="pub-venue">Tesis de Maestría · Universidad de los Andes</p>
+      </div>
+      <span class="pub-link">PDF →</span>
+    </a>
+    
+    <a href="/assets/pdf/CV_Heredia_Niño_08_2025.pdf" class="pub-item reveal" target="_blank" rel="noopener">
+      <span class="pub-year">2023</span>
+      <div>
+        <p class="pub-title">Crimen y Política Pública: Evaluación de Impacto en Bogotá</p>
+        <p class="pub-venue">Tesis de Pregrado · Universidad de los Andes</p>
+      </div>
+      <span class="pub-link">PDF →</span>
+    </a>
+    
+    <a href="#" class="pub-item reveal" target="_blank" rel="noopener">
+      <span class="pub-year">2025</span>
+      <div>
+        <p class="pub-title">Nearshoring y Oportunidades de Exportación para Colombia</p>
+        <p class="pub-venue">Fedesarrollo — Working Paper (en progreso)</p>
+      </div>
+      <span class="pub-link">PDF →</span>
+    </a>
+    
+    <a href="#" class="pub-item reveal" target="_blank" rel="noopener">
+      <span class="pub-year">2024</span>
+      <div>
+        <p class="pub-title">Análisis de Redes de Crimen y Violencia Urbana</p>
+        <p class="pub-venue">CEDE – Universidad de los Andes · Notas de Política</p>
+      </div>
+      <span class="pub-link">PDF →</span>
+    </a>
+    
+  </div>
+</section>
+
+<!-- ─── CURSOS IMPARTIDOS ──────────────────────────────── -->
+<section class="page-section" style="border-bottom: var(--border);">
+  <div class="section-label reveal">
+    <span class="section-label-num" aria-hidden="true">02</span>
+    <span class="section-label-text" data-i18n="academia.courses">Cursos impartidos</span>
+  </div>
+
+  <div class="teaching-list">
+    
+    <div class="teaching-item reveal">
+      <div class="teaching-meta">
+        <span class="teaching-period">2024</span>
+        <span class="teaching-inst">Universidad de los Andes — Educación Continua</span>
+        <span class="teaching-inst" style="color: var(--text-dim); font-size: 9px; margin-top: 2px;">Instructor</span>
+      </div>
+      <div class="teaching-content">
+        <p class="teaching-title">Análisis de Datos y Big Data</p>
+        <p class="teaching-desc">Curso de 60 horas sobre Python, visualización, Machine Learning y Big Data. Teoría con live coding y talleres en Jupyter. Regresión, aprendizaje supervisado/no supervisado y ética en ciencia de datos.</p>
+      </div>
+    </div>
+    
+    <div class="teaching-item reveal">
+      <div class="teaching-meta">
+        <span class="teaching-period">2021 — 2022</span>
+        <span class="teaching-inst">Universidad de los Andes</span>
+        <span class="teaching-inst" style="color: var(--text-dim); font-size: 9px; margin-top: 2px;">Monitor (Prof. David Pérez Reyna)</span>
+      </div>
+      <div class="teaching-content">
+        <p class="teaching-title">Macroeconomía II</p>
+        <p class="teaching-desc">Horas de oficina, calificación de tareas y orientación en métodos cuantitativos.</p>
+      </div>
+    </div>
+    
+    <div class="teaching-item reveal">
+      <div class="teaching-meta">
+        <span class="teaching-period">2020 — 2021</span>
+        <span class="teaching-inst">Universidad de los Andes</span>
+        <span class="teaching-inst" style="color: var(--text-dim); font-size: 9px; margin-top: 2px;">Monitor (Prof. Luis Eduardo Arango)</span>
+      </div>
+      <div class="teaching-content">
+        <p class="teaching-title">Economía Laboral</p>
+        <p class="teaching-desc">Apoyo a estudiantes en modelos de oferta laboral, salarios y mercados de trabajo.</p>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- ─── MATERIAL ───────────────────────────────────────── -->
+<section class="page-section">
+  <div class="section-label reveal">
+    <span class="section-label-num" aria-hidden="true">03</span>
+    <span class="section-label-text" data-i18n="academia.material">Material</span>
+  </div>
+
+  <div class="exp-grid">
+    <div class="exp-card reveal delay-1">
+      <p class="exp-org">Notas de clase</p>
+      <p class="exp-role">Econometría Aplicada</p>
+      <p class="exp-period">2024</p>
+      <p class="exp-desc">Notas para el curso de Métodos Cuantitativos para Políticas Públicas. Cubre regresión, diferencias en diferencias, variables instrumentales y discontinuidades de regresión.</p>
+    </div>
+    <div class="exp-card reveal delay-2">
+      <p class="exp-org">Presentaciones</p>
+      <p class="exp-role">IA en el Sector Público</p>
+      <p class="exp-period">2025</p>
+      <p class="exp-desc">Material de talleres sobre adopción responsable de inteligencia artificial en instituciones públicas colombianas.</p>
+    </div>
+    <div class="exp-card reveal delay-3">
+      <p class="exp-org">Datasets</p>
+      <p class="exp-role">Indicadores de Desarrollo Regional</p>
+      <p class="exp-period">2023 — presente</p>
+      <p class="exp-desc">Panel de indicadores socioeconómicos a nivel municipal para Colombia, 2000–2023. Disponible en GitHub.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+  <footer>
+  <div class="footer-bottom">
+    <div class="footer-social-btns">
+      
+      <a href="https://github.com/jdheredian" target="_blank" rel="noopener">GitHub</a>
+      
+      <a href="https://www.linkedin.com/in/juan-diego-heredia-nino" target="_blank" rel="noopener">LinkedIn</a>
+      
+      <a href="https://scholar.google.com/citations?user=qc6CJjYAAAAJ" target="_blank" rel="noopener">Scholar</a>
+      
+      <a href="mailto:juandiegoheredianino@gmail.com" target="_blank" rel="noopener">Email</a>
+      
+    </div>
+    <span class="footer-bottom-copy">© 2026 Juan Diego Heredia Niño · Bogotá, Colombia</span>
+  </div>
+</footer>
+
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

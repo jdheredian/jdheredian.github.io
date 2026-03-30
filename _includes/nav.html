@@ -1,0 +1,40 @@
+<nav>
+  <!-- Izquierda: logo + hamburger (mobile) -->
+  <div class="nav-left">
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+    {% unless page.url == '/' %}
+    <a href="{{ '/' | relative_url }}" class="nav-logo">
+      <span class="nav-logo-filled">JD</span><span class="nav-logo-outline"> Heredia Niño</span>
+    </a>
+    {% endunless %}
+  </div>
+
+  <!-- Centro: links de navegación -->
+  <ul class="nav-links">
+    <li class="nav-item"><a href="{{ '/sobre-mi/' | relative_url }}" data-i18n="nav.about">Sobre mí</a></li>
+    <li class="nav-item"><a href="{{ '/blog/' | relative_url }}" data-i18n="nav.blog">Blog</a></li>
+    <li class="nav-item"><a href="{{ '/proyectos/' | relative_url }}" data-i18n="nav.projects">Proyectos</a></li>
+    <li class="nav-item"><a href="{{ '/academia/' | relative_url }}" data-i18n="nav.academy">Academia</a></li>
+  </ul>
+
+  <!-- Derecha: controles -->
+  <div class="nav-controls">
+    <button class="icon-btn" id="searchBtn" onclick="toggleSearch()" title="Buscar" aria-label="Buscar">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="6.5" cy="6.5" r="4.5" stroke="currentColor" stroke-width="2"/>
+        <line x1="10.2" y1="10.2" x2="14" y2="14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <button class="icon-btn" id="langBtn" onclick="toggleLang()" title="Cambiar idioma" aria-label="Cambiar idioma"></button>
+    <button class="icon-btn" id="themeBtn" onclick="toggleTheme()" title="Cambiar tema" aria-label="Cambiar tema"></button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="{{ '/sobre-mi/' | relative_url }}" data-i18n="nav.about">Sobre mí</a>
+  <a href="{{ '/blog/' | relative_url }}" data-i18n="nav.blog">Blog</a>
+  <a href="{{ '/proyectos/' | relative_url }}" data-i18n="nav.projects">Proyectos</a>
+  <a href="{{ '/academia/' | relative_url }}" data-i18n="nav.academy">Academia</a>
+</div>

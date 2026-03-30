@@ -1,0 +1,109 @@
+---
+layout: base
+title: Home
+---
+
+<!-- ─── HERO ──────────────────────────────────────────────── -->
+{% assign h = site.data.home.hero %}
+<section class="hero">
+  <div class="hero-left">
+    <p class="hero-tag" data-i18n="hero.tag">{{ h.tag }}</p>
+    <h1 class="hero-name">
+      <span class="name-line-1"><span class="w1">{{ h.name.word1 }}</span> <span class="w2">{{ h.name.word2 }}</span></span>
+      <span class="name-line-2"><span class="w3">{{ h.name.word3 }}</span> <span class="w4">{{ h.name.word4 }}</span></span>
+    </h1>
+    <p class="hero-bio" data-i18n="hero.bio" data-label-en="{{ h.bio_en }}">{{ h.bio }}</p>
+    <div class="role-pills">
+      {% for pill in h.pills %}
+      <span class="pill {{ pill.style }}" data-label-es="{{ pill.label }}" data-label-en="{{ pill.label_en }}">{{ pill.label }}</span>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="collage-grid">
+      <div class="cg-v1">
+        <img src="{{ '/assets/img/' | append: h.photo_vertical | relative_url }}" alt="{{ h.name.word1 }} {{ h.name.word3 }} {{ h.name.word4 }}">
+      </div>
+      <div class="cg-h">
+        <img src="{{ '/assets/img/' | append: h.photo_horizontal | relative_url }}" alt="{{ h.name.word1 }} {{ h.name.word3 }} {{ h.name.word4 }}">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── BLOG PREVIEW ─────────────────────────────────────── -->
+<section class="blog-section">
+  <div class="section-label reveal">
+    <span class="section-label-num" aria-hidden="true">01</span>
+    <span class="section-label-text" data-i18n="section.blog">Últimas entradas de blog</span>
+  </div>
+  <div class="blog-grid">
+    {% for post in site.posts limit:3 %}
+    <a href="{{ post.url | relative_url }}" class="blog-card reveal delay-{{ forloop.index }}">
+      <span class="blog-badge {{ post.tipo | default: 'pro' }}">{{ post.tipo | default: 'pro' | capitalize }}</span>
+      <h3 class="blog-title">{{ post.title }}</h3>
+      <p class="blog-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+      <p class="blog-date">{{ post.date | date: "%b %Y" }}</p>
+    </a>
+    {% endfor %}
+    {% if site.posts.size == 0 %}
+    <a href="/blog/" class="blog-card reveal delay-1">
+      <span class="blog-badge pro">Profesional</span>
+      <h3 class="blog-title">IA en política pública: promesas y límites reales</h3>
+      <p class="blog-excerpt">Una mirada crítica a cómo los gobiernos están adoptando herramientas de IA para tomar decisiones que afectan millones.</p>
+      <p class="blog-date">Mar 2026</p>
+    </a>
+    <a href="/blog/" class="blog-card reveal delay-2">
+      <span class="blog-badge personal">Personal</span>
+      <h3 class="blog-title">Bogotá desde los lentes: lo que la ciudad me enseña</h3>
+      <p class="blog-excerpt">Reflexiones sobre fotografiar una ciudad que no para de cambiar.</p>
+      <p class="blog-date">Feb 2026</p>
+    </a>
+    <a href="/blog/" class="blog-card reveal delay-3">
+      <span class="blog-badge pro">Profesional</span>
+      <h3 class="blog-title">Redes de conocimiento e innovación territorial</h3>
+      <p class="blog-excerpt">¿Cómo se difunde la innovación entre regiones? Un análisis desde la teoría de grafos.</p>
+      <p class="blog-date">Ene 2026</p>
+    </a>
+    {% endif %}
+  </div>
+</section>
+
+<!-- ─── PROJECTS PREVIEW ─────────────────────────────────── -->
+<section class="projects-section">
+  <div class="section-label reveal">
+    <span class="section-label-num" aria-hidden="true">02</span>
+    <span class="section-label-text" data-i18n="section.projects">Proyectos recientes</span>
+  </div>
+  <div class="projects-grid">
+    {% assign sorted_projects = site.projects | sort: "order" %}
+    {% for project in sorted_projects %}
+    <a href="{{ project.url | relative_url }}" class="proj-card {% if forloop.first %}featured{% endif %} reveal delay-{{ forloop.index }}">
+      <p class="proj-cat">{{ project.category }}</p>
+      {% if forloop.first and project.image %}
+      <div class="proj-img">{{ project.image_alt | default: 'Imagen proyecto' }}</div>
+      {% endif %}
+      <h3 class="proj-title">{{ project.title }}</h3>
+      <p class="proj-desc">{{ project.description }}</p>
+    </a>
+    {% endfor %}
+    {% if site.projects.size == 0 %}
+    <div class="proj-card featured reveal delay-1">
+      <p class="proj-cat">Investigación · ML</p>
+      <h3 class="proj-title">Early Warning System — SAT Colombia</h3>
+      <p class="proj-desc">Modelos de Machine Learning para anticipar violencia armada, complementando la inteligencia cualitativa de analistas humanos.</p>
+    </div>
+    <div class="proj-card reveal delay-2">
+      <p class="proj-cat">Fotografía</p>
+      <h3 class="proj-title">Bienal BOG25</h3>
+      <p class="proj-desc">Registro visual de la Bienal de Arte de Bogotá 2025.</p>
+    </div>
+    <div class="proj-card reveal delay-3">
+      <p class="proj-cat">Política Pública</p>
+      <h3 class="proj-title">Comercio & Desarrollo Productivo</h3>
+      <p class="proj-desc">Modelos de gravedad, análisis Input-Output y forecasting ITC.</p>
+    </div>
+    {% endif %}
+  </div>
+</section>

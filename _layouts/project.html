@@ -1,0 +1,36 @@
+---
+layout: base
+---
+<article class="project-section reveal">
+  <header class="project-header">
+    <p class="proj-cat">{{ page.category }}</p>
+    <h1 class="project-title">{{ page.title }}</h1>
+    {% if page.description %}
+    <p class="project-desc">{{ page.description }}</p>
+    {% endif %}
+  </header>
+
+  {% if content and content != '' %}
+  <div class="project-body">
+    {{ content }}
+  </div>
+  {% endif %}
+
+  <div style="margin-top: 56px; padding-top: 32px; border-top: var(--border);">
+    <a href="{{ '/proyectos/' | relative_url }}" style="
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--text);
+      text-decoration: none;
+      padding: 10px 20px;
+      border: var(--border);
+      background: var(--card-bg);
+      display: inline-block;
+      transition: background .1s, color .1s, transform .1s, box-shadow .1s;
+    " onmouseover="this.style.background='var(--text)';this.style.color='var(--bg)';this.style.transform='translate(-2px,-2px)';this.style.boxShadow='var(--sh)'"
+       onmouseout="this.style.background='var(--card-bg)';this.style.color='var(--text)';this.style.transform='none';this.style.boxShadow='none'">← Volver a proyectos</a>
+  </div>
+</article>

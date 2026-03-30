@@ -1,0 +1,31 @@
+# ─────────────────────────────────────────────
+#  HERO
+# ─────────────────────────────────────────────
+hero:
+  tag: "Bogotá, Colombia"
+
+  # Nombre dividido en dos líneas tipográficas
+  name:
+    word1: "Juan"
+    word2: "Diego"
+    word3: "Heredia"
+    word4: "Niño"
+
+  bio: "Investigador, entusiasta de tecnología y amante de la música. Experiencia en el sector privado, industria y academia. Actualmente trabajo en desarrollo económico en Fedesarrollo y UniAndes, mientras comparto mi trabajo profesional y perspectivas creativas por aquí."
+  bio_en: "Researcher, tech enthusiast, and music lover. Experience across the private sector, industry, and academia. Currently working on economic development at Fedesarrollo and UniAndes, while sharing my professional work and creative perspectives here."
+
+  # Fotos del collage (rutas relativas a /assets/img/)
+  photo_vertical:   "home/D37E2F00-C970-4FA6-A105-FD7528E2D90C_1_105_c.jpeg"
+  photo_horizontal: "projects/bienal-bog25/0018_(10).jpg"
+
+  # Pills de rol — style: p-red | p-yellow | (vacío = default)
+  pills:
+    - label: "Fedesarrollo"
+      label_en: "Fedesarrollo"
+      style: "p-red"
+    - label: "UniAndes"
+      label_en: "UniAndes"
+      style: "p-yellow"
+    - label: "Creativo"
+      label_en: "Creative"
+      style: ""

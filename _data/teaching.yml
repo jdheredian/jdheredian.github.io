@@ -1,0 +1,16 @@
+courses:
+  - title: "Análisis de Datos y Big Data"
+    institution: Universidad de los Andes — Educación Continua
+    period: "2024"
+    role: Instructor
+    description: "Curso de 60 horas sobre Python, visualización, Machine Learning y Big Data. Teoría con live coding y talleres en Jupyter. Regresión, aprendizaje supervisado/no supervisado y ética en ciencia de datos."
+  - title: "Macroeconomía II"
+    institution: Universidad de los Andes
+    period: "2021 — 2022"
+    role: Monitor (Prof. David Pérez Reyna)
+    description: "Horas de oficina, calificación de tareas y orientación en métodos cuantitativos."
+  - title: "Economía Laboral"
+    institution: Universidad de los Andes
+    period: "2020 — 2021"
+    role: Monitor (Prof. Luis Eduardo Arango)
+    description: "Apoyo a estudiantes en modelos de oferta laboral, salarios y mercados de trabajo."

@@ -1,0 +1,79 @@
+---
+layout: base
+title: Academia
+permalink: /academia/
+---
+
+<!-- ─── PUBLICACIONES ──────────────────────────────────── -->
+<section class="page-section" style="border-bottom: var(--border);">
+  <div class="section-label reveal">
+    <span class="section-label-num" aria-hidden="true">01</span>
+    <span class="section-label-text" data-i18n="academia.pub">Publicaciones</span>
+  </div>
+
+  <div class="pub-list">
+    {% for pub in site.data.publications.items %}
+    <a href="{{ pub.url }}" class="pub-item reveal" target="_blank" rel="noopener">
+      <span class="pub-year">{{ pub.year }}</span>
+      <div>
+        <p class="pub-title">{{ pub.title }}</p>
+        <p class="pub-venue">{{ pub.venue }}</p>
+      </div>
+      <span class="pub-link">PDF →</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- ─── CURSOS IMPARTIDOS ──────────────────────────────── -->
+<section class="page-section" style="border-bottom: var(--border);">
+  <div class="section-label reveal">
+    <span class="section-label-num" aria-hidden="true">02</span>
+    <span class="section-label-text" data-i18n="academia.courses">Cursos impartidos</span>
+  </div>
+
+  <div class="teaching-list">
+    {% for course in site.data.teaching.courses %}
+    <div class="teaching-item reveal">
+      <div class="teaching-meta">
+        <span class="teaching-period">{{ course.period }}</span>
+        <span class="teaching-inst">{{ course.institution }}</span>
+        <span class="teaching-inst" style="color: var(--text-dim); font-size: 9px; margin-top: 2px;">{{ course.role }}</span>
+      </div>
+      <div class="teaching-content">
+        <p class="teaching-title">{{ course.title }}</p>
+        <p class="teaching-desc">{{ course.description }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- ─── MATERIAL ───────────────────────────────────────── -->
+<section class="page-section">
+  <div class="section-label reveal">
+    <span class="section-label-num" aria-hidden="true">03</span>
+    <span class="section-label-text" data-i18n="academia.material">Material</span>
+  </div>
+
+  <div class="exp-grid">
+    <div class="exp-card reveal delay-1">
+      <p class="exp-org">Notas de clase</p>
+      <p class="exp-role">Econometría Aplicada</p>
+      <p class="exp-period">2024</p>
+      <p class="exp-desc">Notas para el curso de Métodos Cuantitativos para Políticas Públicas. Cubre regresión, diferencias en diferencias, variables instrumentales y discontinuidades de regresión.</p>
+    </div>
+    <div class="exp-card reveal delay-2">
+      <p class="exp-org">Presentaciones</p>
+      <p class="exp-role">IA en el Sector Público</p>
+      <p class="exp-period">2025</p>
+      <p class="exp-desc">Material de talleres sobre adopción responsable de inteligencia artificial en instituciones públicas colombianas.</p>
+    </div>
+    <div class="exp-card reveal delay-3">
+      <p class="exp-org">Datasets</p>
+      <p class="exp-role">Indicadores de Desarrollo Regional</p>
+      <p class="exp-period">2023 — presente</p>
+      <p class="exp-desc">Panel de indicadores socioeconómicos a nivel municipal para Colombia, 2000–2023. Disponible en GitHub.</p>
+    </div>
+  </div>
+</section>

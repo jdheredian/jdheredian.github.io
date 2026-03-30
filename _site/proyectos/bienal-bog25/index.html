@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienal BOG25 — Juan Diego Heredia Niño</title>
+  <meta name="description" content="Registro fotográfico de la Bienal de Bogotá 2025. Lunes 6 de octubre.">
+  <meta name="author" content="Juan Diego Heredia Niño">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Bienal BOG25">
+  <meta property="og:description" content="Registro fotográfico de la Bienal de Bogotá 2025. Lunes 6 de octubre.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://0.0.0.0:4000/proyectos/bienal-bog25/">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <!-- Theme flash prevention: apply saved theme before render -->
+  <script>
+    (function() {
+      var t = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+</head>
+
+<body>
+  <!-- Search overlay: siempre en el body, encima de todo -->
+  <div class="search-overlay" id="searchOverlay" onclick="closeSearch(event)">
+    <div class="search-box">
+      <input type="text" class="search-input" id="searchInput" placeholder="Buscar..." autocomplete="off">
+      <div id="searchResults"></div>
+      <p class="search-hint">ESC para cerrar · ⌘K para abrir</p>
+    </div>
+  </div>
+
+  <nav>
+  <!-- Izquierda: logo + hamburger (mobile) -->
+  <div class="nav-left">
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+    
+    <a href="/" class="nav-logo">
+      <span class="nav-logo-filled">JD</span><span class="nav-logo-outline"> Heredia Niño</span>
+    </a>
+    
+  </div>
+
+  <!-- Centro: links de navegación -->
+  <ul class="nav-links">
+    <li class="nav-item"><a href="/sobre-mi/" data-i18n="nav.about">Sobre mí</a></li>
+    <li class="nav-item"><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
+    <li class="nav-item"><a href="/proyectos/" data-i18n="nav.projects">Proyectos</a></li>
+    <li class="nav-item"><a href="/academia/" data-i18n="nav.academy">Academia</a></li>
+  </ul>
+
+  <!-- Derecha: controles -->
+  <div class="nav-controls">
+    <button class="icon-btn" id="searchBtn" onclick="toggleSearch()" title="Buscar" aria-label="Buscar">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="6.5" cy="6.5" r="4.5" stroke="currentColor" stroke-width="2"/>
+        <line x1="10.2" y1="10.2" x2="14" y2="14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <button class="icon-btn" id="langBtn" onclick="toggleLang()" title="Cambiar idioma" aria-label="Cambiar idioma"></button>
+    <button class="icon-btn" id="themeBtn" onclick="toggleTheme()" title="Cambiar tema" aria-label="Cambiar tema"></button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/sobre-mi/" data-i18n="nav.about">Sobre mí</a>
+  <a href="/blog/" data-i18n="nav.blog">Blog</a>
+  <a href="/proyectos/" data-i18n="nav.projects">Proyectos</a>
+  <a href="/academia/" data-i18n="nav.academy">Academia</a>
+</div>
+
+  
+
+  <main><article class="project-section reveal">
+  <header class="project-header">
+    <p class="proj-cat">Fotografía</p>
+    <h1 class="project-title">Bienal BOG25</h1>
+    
+    <p class="project-desc">Registro fotográfico de la Bienal de Bogotá 2025. Lunes 6 de octubre.</p>
+    
+  </header>
+
+  
+  <div class="project-body">
+    <style>
+.gallery { display: grid; gap: 6px; margin-bottom: 6px; }
+.gallery-2 { grid-template-columns: 1fr 1fr; }
+.gallery-3 { grid-template-columns: 1fr 1fr 1fr; }
+.gallery-wide { grid-template-columns: 2fr 1fr; }
+.gallery-wide-r { grid-template-columns: 1fr 2fr; }
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border: var(--border);
+  transition: filter .2s;
+}
+.gallery img:hover { filter: brightness(1.05); }
+.gallery-col { display: flex; flex-direction: column; gap: 6px; }
+@media (max-width: 768px) {
+  .gallery-2, .gallery-3, .gallery-wide, .gallery-wide-r { grid-template-columns: 1fr; }
+}
+</style>
+
+<div class="gallery gallery-2">
+  <img src="/assets/img/projects/bienal-bog25/0018_(30).jpg" alt="Bienal BOG25" />
+  <img src="/assets/img/projects/bienal-bog25/0018_(35).jpg" alt="Bienal BOG25" />
+</div>
+
+<div class="gallery" style="margin-bottom:6px;">
+  <img src="/assets/img/projects/bienal-bog25/0018_(31).jpg" alt="Bienal BOG25" style="height:400px;object-fit:cover;width:100%;border:var(--border);" />
+</div>
+
+<div class="gallery gallery-2">
+  <img src="/assets/img/projects/bienal-bog25/0018_(32).jpg" alt="Bienal BOG25" />
+  <img src="/assets/img/projects/bienal-bog25/0018_(33).jpg" alt="Bienal BOG25" />
+</div>
+
+<div class="gallery gallery-2">
+  <div class="gallery-col">
+    <img src="/assets/img/projects/bienal-bog25/0018_(19).jpg" alt="Bienal BOG25" />
+    <img src="/assets/img/projects/bienal-bog25/68c17b0a-2903-44d0-ac2b-cdd84b55eb60.png" alt="Bienal BOG25" />
+  </div>
+  <div class="gallery-col">
+    <img src="/assets/img/projects/bienal-bog25/0dfe76f2-74a0-49f2-89d9-82303f1c79d7.png" alt="Bienal BOG25" />
+    <img src="/assets/img/projects/bienal-bog25/0018_(16).jpg" alt="Bienal BOG25" />
+  </div>
+</div>
+
+<div class="gallery" style="margin-bottom:6px;">
+  <img src="/assets/img/projects/bienal-bog25/0018_(26).jpg" alt="Bienal BOG25" style="height:380px;object-fit:cover;width:100%;border:var(--border);" />
+</div>
+
+<div class="gallery gallery-2">
+  <img src="/assets/img/projects/bienal-bog25/0018_(11).jpg" alt="Bienal BOG25" />
+  <div class="gallery-col">
+    <img src="/assets/img/projects/bienal-bog25/0018_(12).jpg" alt="Bienal BOG25" />
+    <img src="/assets/img/projects/bienal-bog25/0018_(10).jpg" alt="Bienal BOG25" />
+  </div>
+</div>
+
+<div class="gallery gallery-wide-r">
+  <div class="gallery-col">
+    <img src="/assets/img/projects/bienal-bog25/0018_(1).jpg" alt="Bienal BOG25" />
+    <img src="/assets/img/projects/bienal-bog25/0018_(4).jpg" alt="Bienal BOG25" />
+    <img src="/assets/img/projects/bienal-bog25/0018_(7).jpg" alt="Bienal BOG25" />
+  </div>
+  <div class="gallery-col">
+    <img src="/assets/img/projects/bienal-bog25/0018_(6).jpg" alt="Bienal BOG25" />
+    <img src="/assets/img/projects/bienal-bog25/0018_(20).jpg" alt="Bienal BOG25" />
+  </div>
+</div>
+
+<div class="gallery gallery-wide">
+  <div class="gallery-col">
+    <img src="/assets/img/projects/bienal-bog25/0018_(22).jpg" alt="Bienal BOG25" />
+    <img src="/assets/img/projects/bienal-bog25/0f92608d-463f-4e54-a775-a9fb83a8a58d.png" alt="Bienal BOG25" />
+  </div>
+  <img src="/assets/img/projects/bienal-bog25/0018_(9).jpg" alt="Bienal BOG25" />
+</div>
+
+<div class="gallery gallery-wide-r">
+  <img src="/assets/img/projects/bienal-bog25/d94cbe29-6ff0-4cb3-b929-20d2f4e1786b.png" alt="Bienal BOG25" />
+  <div class="gallery-col">
+    <img src="/assets/img/projects/bienal-bog25/0018_(18).jpg" alt="Bienal BOG25" />
+    <img src="/assets/img/projects/bienal-bog25/0018_(24).jpg" alt="Bienal BOG25" />
+  </div>
+</div>
+
+<div class="gallery gallery-wide">
+  <img src="/assets/img/projects/bienal-bog25/0018_(34).jpg" alt="Bienal BOG25" />
+  <div class="gallery-col">
+    <img src="/assets/img/projects/bienal-bog25/aa0f9b79-9708-42e2-a2d2-6598b0049be9.png" alt="Bienal BOG25" />
+    <img src="/assets/img/projects/bienal-bog25/0018_(27).jpg" alt="Bienal BOG25" />
+  </div>
+</div>
+
+  </div>
+  
+
+  <div style="margin-top: 56px; padding-top: 32px; border-top: var(--border);">
+    <a href="/proyectos/" style="
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--text);
+      text-decoration: none;
+      padding: 10px 20px;
+      border: var(--border);
+      background: var(--card-bg);
+      display: inline-block;
+      transition: background .1s, color .1s, transform .1s, box-shadow .1s;
+    " onmouseover="this.style.background='var(--text)';this.style.color='var(--bg)';this.style.transform='translate(-2px,-2px)';this.style.boxShadow='var(--sh)'"
+       onmouseout="this.style.background='var(--card-bg)';this.style.color='var(--text)';this.style.transform='none';this.style.boxShadow='none'">← Volver a proyectos</a>
+  </div>
+</article>
+</main>
+
+  <footer>
+  <div class="footer-bottom">
+    <div class="footer-social-btns">
+      
+      <a href="https://github.com/jdheredian" target="_blank" rel="noopener">GitHub</a>
+      
+      <a href="https://www.linkedin.com/in/juan-diego-heredia-nino" target="_blank" rel="noopener">LinkedIn</a>
+      
+      <a href="https://scholar.google.com/citations?user=qc6CJjYAAAAJ" target="_blank" rel="noopener">Scholar</a>
+      
+      <a href="mailto:juandiegoheredianino@gmail.com" target="_blank" rel="noopener">Email</a>
+      
+    </div>
+    <span class="footer-bottom-copy">© 2026 Juan Diego Heredia Niño · Bogotá, Colombia</span>
+  </div>
+</footer>
+
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

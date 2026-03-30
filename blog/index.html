@@ -1,0 +1,23 @@
+---
+layout: base
+title: Blog
+permalink: /blog/
+---
+
+<section class="blog-index-section">
+  <div class="section-label reveal">
+    <span class="section-label-num" aria-hidden="true">01</span>
+    <span class="section-label-text" data-i18n="blog.all">Todas las entradas</span>
+  </div>
+
+  <div class="blog-grid">
+    {% for post in site.posts %}
+    <a href="{{ post.url | relative_url }}" class="blog-card reveal">
+      <span class="blog-badge {{ post.tipo | default: 'pro' }}">{{ post.tipo | default: 'pro' | capitalize }}</span>
+      <h3 class="blog-title">{{ post.title }}</h3>
+      <p class="blog-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+      <p class="blog-date">{{ post.date | date: "%b %Y" }}</p>
+    </a>
+    {% endfor %}
+  </div>
+</section>

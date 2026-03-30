@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos — Juan Diego Heredia Niño</title>
+  <meta name="description" content="Economista en la intersección de política pública, IA y desarrollo territorial.">
+  <meta name="author" content="Juan Diego Heredia Niño">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Proyectos">
+  <meta property="og:description" content="Economista en la intersección de política pública, IA y desarrollo territorial.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://0.0.0.0:4000/proyectos/">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <!-- Theme flash prevention: apply saved theme before render -->
+  <script>
+    (function() {
+      var t = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+</head>
+
+<body>
+  <!-- Search overlay: siempre en el body, encima de todo -->
+  <div class="search-overlay" id="searchOverlay" onclick="closeSearch(event)">
+    <div class="search-box">
+      <input type="text" class="search-input" id="searchInput" placeholder="Buscar..." autocomplete="off">
+      <div id="searchResults"></div>
+      <p class="search-hint">ESC para cerrar · ⌘K para abrir</p>
+    </div>
+  </div>
+
+  <nav>
+  <!-- Izquierda: logo + hamburger (mobile) -->
+  <div class="nav-left">
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+    
+    <a href="/" class="nav-logo">
+      <span class="nav-logo-filled">JD</span><span class="nav-logo-outline"> Heredia Niño</span>
+    </a>
+    
+  </div>
+
+  <!-- Centro: links de navegación -->
+  <ul class="nav-links">
+    <li class="nav-item"><a href="/sobre-mi/" data-i18n="nav.about">Sobre mí</a></li>
+    <li class="nav-item"><a href="/blog/" data-i18n="nav.blog">Blog</a></li>
+    <li class="nav-item"><a href="/proyectos/" data-i18n="nav.projects">Proyectos</a></li>
+    <li class="nav-item"><a href="/academia/" data-i18n="nav.academy">Academia</a></li>
+  </ul>
+
+  <!-- Derecha: controles -->
+  <div class="nav-controls">
+    <button class="icon-btn" id="searchBtn" onclick="toggleSearch()" title="Buscar" aria-label="Buscar">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="6.5" cy="6.5" r="4.5" stroke="currentColor" stroke-width="2"/>
+        <line x1="10.2" y1="10.2" x2="14" y2="14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <button class="icon-btn" id="langBtn" onclick="toggleLang()" title="Cambiar idioma" aria-label="Cambiar idioma"></button>
+    <button class="icon-btn" id="themeBtn" onclick="toggleTheme()" title="Cambiar tema" aria-label="Cambiar tema"></button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/sobre-mi/" data-i18n="nav.about">Sobre mí</a>
+  <a href="/blog/" data-i18n="nav.blog">Blog</a>
+  <a href="/proyectos/" data-i18n="nav.projects">Proyectos</a>
+  <a href="/academia/" data-i18n="nav.academy">Academia</a>
+</div>
+
+  
+
+  <main><section class="proyectos-section">
+  <div class="section-label reveal">
+    <span class="section-label-num" aria-hidden="true">01</span>
+    <span class="section-label-text" data-i18n="projects.all">Todos los proyectos</span>
+  </div>
+
+  <div class="proyectos-grid">
+    
+    
+    <a href="/proyectos/early-warning-sat/" class="proj-card featured reveal">
+      <p class="proj-cat">Investigación · ML</p>
+      
+      <h3 class="proj-title">Early Warning System — SAT Colombia</h3>
+      <p class="proj-desc">Modelos de Machine Learning para anticipar violencia armada, complementando la inteligencia cualitativa de analistas humanos.</p>
+    </a>
+    
+    <a href="/proyectos/bienal-bog25/" class="proj-card  reveal">
+      <p class="proj-cat">Fotografía</p>
+      
+      <h3 class="proj-title">Bienal BOG25</h3>
+      <p class="proj-desc">Registro fotográfico de la Bienal de Bogotá 2025. Lunes 6 de octubre.</p>
+    </a>
+    
+  </div>
+</section>
+</main>
+
+  <footer>
+  <div class="footer-bottom">
+    <div class="footer-social-btns">
+      
+      <a href="https://github.com/jdheredian" target="_blank" rel="noopener">GitHub</a>
+      
+      <a href="https://www.linkedin.com/in/juan-diego-heredia-nino" target="_blank" rel="noopener">LinkedIn</a>
+      
+      <a href="https://scholar.google.com/citations?user=qc6CJjYAAAAJ" target="_blank" rel="noopener">Scholar</a>
+      
+      <a href="mailto:juandiegoheredianino@gmail.com" target="_blank" rel="noopener">Email</a>
+      
+    </div>
+    <span class="footer-bottom-copy">© 2026 Juan Diego Heredia Niño · Bogotá, Colombia</span>
+  </div>
+</footer>
+
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

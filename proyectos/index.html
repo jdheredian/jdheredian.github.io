@@ -1,0 +1,26 @@
+---
+layout: base
+title: Proyectos
+permalink: /proyectos/
+---
+
+<section class="proyectos-section">
+  <div class="section-label reveal">
+    <span class="section-label-num" aria-hidden="true">01</span>
+    <span class="section-label-text" data-i18n="projects.all">Todos los proyectos</span>
+  </div>
+
+  <div class="proyectos-grid">
+    {% assign sorted_projects = site.projects | sort: "order" %}
+    {% for project in sorted_projects %}
+    <a href="{{ project.url | relative_url }}" class="proj-card {% if forloop.first %}featured{% endif %} reveal">
+      <p class="proj-cat">{{ project.category }}</p>
+      {% if forloop.first and project.image %}
+      <div class="proj-img">{{ project.image_alt | default: 'Imagen' }}</div>
+      {% endif %}
+      <h3 class="proj-title">{{ project.title }}</h3>
+      <p class="proj-desc">{{ project.description }}</p>
+    </a>
+    {% endfor %}
+  </div>
+</section>

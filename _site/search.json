@@ -1,0 +1,49 @@
+[
+
+  {
+    "title": "IA en política pública: promesas y límites reales",
+    "url": "/2026/03/01/ia-politica-publica.html",
+    "excerpt": "Una mirada crítica a cómo los gobiernos están adoptando herramientas de IA para tomar decisiones que afectan millones.",
+    "tipo": "pro",
+    "type": "post",
+    "date": "Mar 2026"
+  },
+
+  {
+    "title": "Bogotá desde los lentes: lo que la ciudad me enseña",
+    "url": "/2026/02/15/bogota-desde-los-lentes.html",
+    "excerpt": "Reflexiones sobre fotografiar una ciudad que no para de cambiar.",
+    "tipo": "personal",
+    "type": "post",
+    "date": "Feb 2026"
+  },
+
+  {
+    "title": "Redes de conocimiento e innovación territorial",
+    "url": "/2026/01/20/redes-conocimiento-innovacion.html",
+    "excerpt": "¿Cómo se difunde la innovación entre regiones? Un análisis desde la teoría de grafos.",
+    "tipo": "pro",
+    "type": "post",
+    "date": "Jan 2026"
+  }
+
+,
+
+
+  {
+    "title": "Early Warning System — SAT Colombia",
+    "url": "/proyectos/early-warning-sat/",
+    "excerpt": "Modelos de Machine Learning para anticipar violencia armada, complementando la inteligencia cualitativa de analistas humanos.",
+    "category": "Investigación · ML",
+    "type": "project"
+  },
+
+  {
+    "title": "Bienal BOG25",
+    "url": "/proyectos/bienal-bog25/",
+    "excerpt": "Registro fotográfico de la Bienal de Bogotá 2025. Lunes 6 de octubre.",
+    "category": "Fotografía",
+    "type": "project"
+  }
+
+]

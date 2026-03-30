@@ -1,0 +1,34 @@
+title: Juan Diego Heredia Niño
+description: Economista en la intersección de política pública, IA y desarrollo territorial.
+url: "https://jdheredian.github.io"
+lang: es
+theme: null
+
+collections:
+  projects:
+    output: true
+    permalink: /proyectos/:slug/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
+plugins:
+  - jekyll-feed
+
+future: true        # mostrar posts con fecha futura
+show_drafts: false  # cambiar a true para ver borradores localmente
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - docker-compose.yml

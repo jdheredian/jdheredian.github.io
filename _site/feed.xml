@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" hreflang="es" /><updated>2026-03-30T00:55:16+00:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">Juan Diego Heredia Niño</title><subtitle>Economista en la intersección de política pública, IA y desarrollo territorial.</subtitle><entry><title type="html">IA en política pública: promesas y límites reales</title><link href="http://0.0.0.0:4000/2026/03/01/ia-politica-publica.html" rel="alternate" type="text/html" title="IA en política pública: promesas y límites reales" /><published>2026-03-01T00:00:00+00:00</published><updated>2026-03-01T00:00:00+00:00</updated><id>http://0.0.0.0:4000/2026/03/01/ia-politica-publica</id><content type="html" xml:base="http://0.0.0.0:4000/2026/03/01/ia-politica-publica.html"><![CDATA[<p>En los últimos tres años, la adopción de herramientas de inteligencia artificial en el sector público ha pasado de ser una promesa futurista a convertirse en una realidad operativa. Desde sistemas de alerta temprana para conflictos armados hasta modelos de focalización de subsidios sociales, los gobiernos de la región están experimentando con IA a una velocidad que supera la capacidad regulatoria y la reflexión crítica.</p>
+
+<h2 id="la-promesa-eficiencia-y-precisión">La promesa: eficiencia y precisión</h2>
+
+<p>La narrativa dominante presenta la IA como una solución a dos problemas estructurales del Estado: la escasez de recursos y la asimetría de información. Un modelo que procesa millones de registros en segundos puede, en teoría, hacer lo que un equipo de analistas tardaría años en completar. La focalización de programas sociales, el monitoreo de contratos públicos, la predicción de demanda en servicios de salud: todos estos casos tienen evidencia prometedora.</p>
+
+<p>El problema no es que la promesa sea falsa. El problema es que es incompleta.</p>
+
+<h2 id="el-límite-que-los-papers-no-mencionan">El límite que los papers no mencionan</h2>
+
+<p>Toda predicción es una destilación del pasado. Cuando entrenamos un modelo con datos históricos de violencia, pobreza o delincuencia, codificamos en él las desigualdades, sesgos y condiciones estructurales que produjeron esos datos. El modelo no “descubre” patrones objetivos: <strong>reproduce las categorías que ya teníamos</strong>.</p>
+
+<p>Esto tiene consecuencias prácticas que a menudo se subestiman en las discusiones técnicas:</p>
+
+<ol>
+  <li><strong>El sesgo geográfico</strong>: los territorios más monitoreados producen más datos, lo que hace que los modelos “vean” más problemas donde ya se miraba antes.</li>
+  <li><strong>La ilusión de precisión</strong>: un AUC de 0.85 impresiona en un paper, pero oculta cuántos falsos positivos se están produciendo sobre comunidades reales.</li>
+  <li><strong>La caja negra institucional</strong>: incluso cuando el modelo es interpretable, la decisión de implementarlo —quién lo gestiona, cómo se audita, qué pasa cuando falla— sigue siendo opaca.</li>
+</ol>
+
+<h2 id="lo-que-la-política-pública-necesita-que-la-ia-aporte">Lo que la política pública necesita que la IA aporte</h2>
+
+<p>No estoy argumentando contra la adopción de IA en el sector público. Estoy argumentando por una adopción más honesta. Las herramientas de IA son más útiles cuando:</p>
+
+<ul>
+  <li>Asisten a analistas humanos en lugar de reemplazarlos</li>
+  <li>Se construyen con participación de las comunidades afectadas</li>
+  <li>Tienen mecanismos de revisión y apelación explícitos</li>
+  <li>Están sujetas a auditorías independientes</li>
+</ul>
+
+<p>En el trabajo que hemos hecho con el SAT Colombia, el modelo de alerta temprana no toma decisiones: genera señales que los analistas territoriales interpretan con su conocimiento cualitativo del contexto. Esa combinación —capacidad computacional y juicio humano situado— es más poderosa que cualquiera de los dos elementos solos.</p>
+
+<h2 id="para-terminar">Para terminar</h2>
+
+<p>La inteligencia artificial no va a resolver los problemas estructurales del Estado colombiano. Pero puede hacer más visibles ciertos patrones, liberar tiempo analítico para preguntas más difíciles, y mejorar la calidad de decisiones específicas cuando se implementa con cuidado. La clave es no confundir la herramienta con la solución.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Una mirada crítica a cómo los gobiernos están adoptando herramientas de IA para tomar decisiones que afectan millones.]]></summary></entry><entry><title type="html">Bogotá desde los lentes: lo que la ciudad me enseña</title><link href="http://0.0.0.0:4000/2026/02/15/bogota-desde-los-lentes.html" rel="alternate" type="text/html" title="Bogotá desde los lentes: lo que la ciudad me enseña" /><published>2026-02-15T00:00:00+00:00</published><updated>2026-02-15T00:00:00+00:00</updated><id>http://0.0.0.0:4000/2026/02/15/bogota-desde-los-lentes</id><content type="html" xml:base="http://0.0.0.0:4000/2026/02/15/bogota-desde-los-lentes.html"><![CDATA[<p>Empecé a fotografiar Bogotá por accidente. Tenía una cámara prestada, tiempo libre en una tarde de octubre, y la sensación vaga de que algo estaba pasando en las calles que no sabía nombrar todavía. Cuatro años después, la ciudad sigue siendo mi sujeto principal, y sigo sin saber nombrarlo del todo. Creo que eso es exactamente por qué sigo fotografiándola.</p>
+
+<h2 id="una-ciudad-que-no-quiere-quedarse-quieta">Una ciudad que no quiere quedarse quieta</h2>
+
+<p>Bogotá tiene la costumbre de cambiar antes de que puedas terminar de describirla. El barrio que documenté el año pasado ya tiene tres nuevas torres. La galería que fotografié en La Candelaria cerró y en su lugar abrió una cafetería de especialidad. El mural que usé de fondo en veinte fotos lo tumbaron para ampliar una vía.</p>
+
+<p>Esta impermanencia es frustrante desde una perspectiva archivística, pero es productiva desde una perspectiva fotográfica. Me obliga a mirar más rápido, a no dar nada por sentado, a tratar cada salida como si fuera la última oportunidad de capturar algo que pronto dejará de existir.</p>
+
+<h2 id="lo-que-la-cámara-me-enseñó-que-la-economía-no-pudo">Lo que la cámara me enseñó que la economía no pudo</h2>
+
+<p>Pasé años estudiando la segregación urbana en Bogotá a través de cifras: índices de Gini, densidades habitacionales, tiempos de desplazamiento. Los números son reales y necesarios. Pero la fotografía me mostró algo que los datos no capturan tan fácilmente: la <strong>textura</strong> de la desigualdad.</p>
+
+<p>La forma en que cambia la calidad del pavimento cuando cruzas cierta avenida. El tipo de comercio que ocupa los primeros pisos en diferentes barrios. Los olores, las velocidades, los niveles de ruido. La fotografía no reemplaza el análisis cuantitativo, pero lo completa con algo que los modelos no pueden representar todavía: la experiencia vivida del espacio.</p>
+
+<h2 id="la-bienal-bog25">La Bienal BOG25</h2>
+
+<p>Este año tuve la oportunidad de documentar la Bienal de Arte de Bogotá, y fue una experiencia que me hizo pensar mucho sobre la relación entre el arte, el espacio público y la ciudad que lo acoge. Los artistas venían de contextos muy distintos, pero todos estaban negociando con la misma pregunta: ¿qué le pertenece a Bogotá y qué le pertenece al mercado?</p>
+
+<p>No tengo una respuesta. Pero tengo fotos.</p>
+
+<hr />
+
+<p><em>Las fotos del proyecto Bienal BOG25 están disponibles en la sección de proyectos.</em></p>]]></content><author><name></name></author><summary type="html"><![CDATA[Reflexiones sobre fotografiar una ciudad que no para de cambiar.]]></summary></entry><entry><title type="html">Redes de conocimiento e innovación territorial</title><link href="http://0.0.0.0:4000/2026/01/20/redes-conocimiento-innovacion.html" rel="alternate" type="text/html" title="Redes de conocimiento e innovación territorial" /><published>2026-01-20T00:00:00+00:00</published><updated>2026-01-20T00:00:00+00:00</updated><id>http://0.0.0.0:4000/2026/01/20/redes-conocimiento-innovacion</id><content type="html" xml:base="http://0.0.0.0:4000/2026/01/20/redes-conocimiento-innovacion.html"><![CDATA[<p>Una de las preguntas más persistentes en economía del desarrollo es por qué la innovación tiende a concentrarse geográficamente. ¿Por qué Silicon Valley, y no Phoenix? ¿Por qué Medellín, y no Manizales? Las respuestas convencionales invocan economías de aglomeración, capital humano y acceso a financiamiento. Pero hay otra dimensión que a menudo se subestima: la estructura de las redes de conocimiento.</p>
+
+<h2 id="redes-no-mercados">Redes, no mercados</h2>
+
+<p>La economía neoclásica tiende a pensar el conocimiento como un bien que se difunde automáticamente a través del mercado. Si algo funciona, otros lo imitarán; si una tecnología es superior, desplazará a las inferiores. Este modelo de difusión es útil, pero ignora que el conocimiento —especialmente el conocimiento tácito, no codificable— se transmite principalmente a través de relaciones personales y organizacionales.</p>
+
+<p>Dos empresas que están en la misma ciudad pero no tienen ninguna conexión entre sí no comparten conocimiento automáticamente. Dos investigadores que colaboraron en un artículo hace cinco años pueden seguir intercambiando ideas aunque estén en países distintos. La distancia geográfica importa, pero la <strong>distancia en la red</strong> importa más.</p>
+
+<h2 id="el-caso-colombiano">El caso colombiano</h2>
+
+<p>En Colombia, la distribución de la actividad innovadora sigue un patrón de alta concentración: Bogotá, Medellín y Cali concentran más del 70% de las patentes y publicaciones científicas. Pero cuando miramos las redes de colaboración, el patrón es más interesante.</p>
+
+<p>Algunas ciudades intermedias tienen una posición de <em>brokerage</em> —es decir, actúan como puentes entre comunidades de conocimiento que de otra forma no estarían conectadas. Barranquilla, por ejemplo, tiene conexiones con redes caribeñas que no existen en el triángulo central. Pereira tiene vínculos con el clúster cafetero internacional que no tienen ni Bogotá ni Medellín.</p>
+
+<p>Esta posición de intermediación es potencialmente más valiosa que el volumen absoluto de actividad innovadora.</p>
+
+<h2 id="implicaciones-para-la-política">Implicaciones para la política</h2>
+
+<p>Si las redes importan, las políticas que solo se concentran en aumentar el <em>stock</em> de conocimiento (más universidades, más investigadores, más gasto en I+D) son necesarias pero insuficientes. Igual de importante es diseñar políticas que <em>conecten</em> comunidades de conocimiento que hoy están desvinculadas.</p>
+
+<p>Esto puede significar:</p>
+<ul>
+  <li>Programas de movilidad de investigadores entre centros</li>
+  <li>Incentivos para colaboraciones entre regiones, no solo dentro de ellas</li>
+  <li>Financiamiento para proyectos que explícitamente conecten actores de distintas ciudades</li>
+</ul>
+
+<p>Los grafos no son solo una herramienta analítica. Son también un mapa de las intervenciones posibles.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[¿Cómo se difunde la innovación entre regiones? Un análisis desde la teoría de grafos.]]></summary></entry></feed>
